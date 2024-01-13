@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClicksByShubham</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a9d6e5;
+        }
+
+        header {
+            background-color: #001233;
+            color: #fff;
+            padding: 1rem;
+            text-align: right;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        
+        
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            margin-right: 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #0466c8;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            margin: 10px;
+            padding: 20px;
+            background-color: #013a63;
+            border-radius: 8px;
+            color: #a9d6e5;
+            box-shadow: #012a4a;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color:#01497c ;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow:#012a4a;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #ffcc00;
+        }
+        img{
+            width: 300px;  
+            height: 400px;  
+            text-align: center;  
+            padding: 15px;  
+            border: 3px solid #001845; 
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+  
+        image {
+            max-width: 90%;
+            max-height:90%;
+            float: left;
+        }
+  
+        .text {
+            font-size: 15px;
+            padding-left: 20px;
+            
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+     
+
+    <h1 style="font-family: cursive;color: #001845;text-align: center;">Welcome To  ClicksByShubham</h1>
+    
+    <div class="container">
+        <div class="image">
+            
+          <img src="man-with-camera.jpg" alt="">
+        </div>
+        <div class="text">
+            <h2 >About us</h2>
+        
+            <p>Welcome to ClicksByShubham, where moments are captured with passion and precision. Meet our visionary photographer and the driving force behind this creative endeavor – Shubham Kondhare.</p>
+    
+            <p>Shubham is not only an accomplished photographer but also a dedicated engineering student with a flair for capturing the beauty that surrounds us. His journey into the world of photography started as a hobby, a means to escape the rigors of academic life and express his creativity.</p>
+        
+            <p>Despite the demands of pursuing an engineering degree, Shubham found solace and joy in photography. Through his lens, he discovered a unique way to freeze moments in time, creating memories that last a lifetime. His keen eye for detail and an innate ability to capture the essence of his subjects set him apart.</p>
+        
+            <p>At ClicksByShubham, we believe in turning ordinary moments into extraordinary memories. Shubham's passion for photography is reflected in every shot he takes, bringing a blend of technical expertise and artistic vision to every project. Whether it's a portrait, product, food, fashion, or event photography, Shubham's dedication shines through in the quality of his work.</p>
+        
+            <p>Join us on this visual journey, where engineering meets art, and every click tells a unique story. Explore the world of ClicksByShubham and let us capture the moments that matter to you.</p>
+        </div>
+      </div>
+
+    
+
+    
+    <section id="service">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Product Photography</h3>
+                <img src="product img.jpg" alt="product img loading" class="img">
+                <p>High-quality photos to showcase your products.</p>
+                <p>Price: $45</p>
+                <p>Customer Review: Excellent</p>
+            </div>
+            <div class="service">
+                <h3>Food Photography</h3>
+                <img src="food.jpg" alt="food img loading" class="img">
+                <p>Mouth-watering food photos for your restaurant or business.</p>
+                <p>Price: $55</p>
+                <p>Customer Review: Outstanding</p>
+            </div>
+            <div class="service">
+                <h3>Fashion Photography</h3>
+                <img src="fashion img.jpg" alt="fashion img loading" class="img">
+                <p>Capturing the essence of style and fashion.</p>
+                <p>Price: $60</p>
+                <p>Customer Review: Amazing</p>
+            </div>
+            <div class="service">
+                <h3>Event Photography</h3>
+                <img src="event img.jpg" alt="event img loading" class="img">
+                <p>Documenting your special moments and events.</p>
+                <p>Price: $55</p>
+                <p>Customer Review: Superb</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service-type">Type of Service:</label>
+            <input type="text" id="service-type" name="service-type" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
